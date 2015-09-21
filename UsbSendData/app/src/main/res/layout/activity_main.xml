@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:backgroundTint="@color/background_material_light">
+
+    <TextView android:text="@string/hello_world"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:id="@+id/headline"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonCheck"
+        android:id="@+id/buttonCheck"
+        android:layout_below="@+id/headline"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/headline"
+        android:layout_toStartOf="@+id/headline" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonSend"
+        android:id="@+id/buttonSend"
+        android:layout_below="@+id/buttonCheck"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="24dp"
+        android:layout_toLeftOf="@+id/textOut"
+        android:layout_toStartOf="@+id/textOut" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/textData"
+        android:layout_alignTop="@+id/buttonCheck"
+        android:layout_alignLeft="@+id/headline"
+        android:layout_alignStart="@+id/headline"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="#fffff7b0"
+        android:layout_alignBottom="@+id/buttonCheck" />
+
+    <EditText
+        android:id="@+id/textOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonSend"
+        android:layout_alignLeft="@+id/textData"
+        android:layout_alignStart="@+id/textData"
+        android:background="#fffff7b0"
+        android:layout_alignTop="@+id/buttonSend" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text=""
+        android:id="@+id/textRx"
+        android:layout_marginTop="21dp"
+        android:background="#ffbbffc7"
+        android:layout_below="@+id/buttonSend"
+        android:layout_alignLeft="@id/buttonSend"
+        android:layout_alignRight="@+id/textOut"
+        android:layout_alignEnd="@+id/textOut" />
+
+</RelativeLayout>

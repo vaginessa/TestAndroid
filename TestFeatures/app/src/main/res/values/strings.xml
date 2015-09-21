@@ -1,0 +1,16 @@
+<resources>
+    <!-- activity names -->
+    <string name="app_name">TestFeatures</string>
+    <string name="title_activity_display_message">My Message</string>
+
+    <string name="hello_world">To Boldly Go</string>
+    <string name="button_send">Start 1</string>
+
+    <!-- Action Bar Items -->
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+
+    <string name="preference_file_key">prefFile.txt</string>
+    <string name="button_pref_file">Load Pref.</string>
+
+</resources>

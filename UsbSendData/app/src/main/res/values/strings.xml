@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">UsbSendData</string>
+
+    <string name="hello_world">---USB Interface---</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="buttonCheck">Check Device</string>
+    <string name="buttonSend">Send Data</string>
+</resources>
